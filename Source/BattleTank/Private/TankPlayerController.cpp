@@ -33,7 +33,7 @@ ATank* ATankPlayerController::GetControlledTank() const
 	return Cast<ATank>(GetPawn());
 }
 
-void ATankPlayerController::AimTowardsCrosshair()
+void ATankPlayerController::AimTowardsCrosshair() const
 {
 	if (!GetControlledTank()) { return; }
 
@@ -56,8 +56,8 @@ bool ATankPlayerController::GetSightRayHitLocation(FVector& HitLocation) const
 	int32 ViewportSizeX, ViewportSizeY;
 	GetViewportSize(ViewportSizeX, ViewportSizeY);
 	auto ScreenLocation = FVector2D(
-		ViewportSizeX * CrossHairXLocation, 
-		ViewportSizeY * CrossHairYLocation
+		ViewportSizeX * CrossHairLocation.X, 
+		ViewportSizeY * CrossHairLocation.Y
 	);
 
 	// "De-project" the screen position of the crosshair to a world direction
