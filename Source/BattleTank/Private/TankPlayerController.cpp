@@ -88,7 +88,6 @@ bool ATankPlayerController::GetLookVectorHitLocation(FVector LookDirection, FVec
 	auto StartLocation = PlayerCameraManager->GetCameraLocation();
 	auto EndLocation = StartLocation + (LookDirection * LineTraceRange);
 
-	// If line trace succeeds
 	auto LineTrace = GetWorld()->LineTraceSingleByChannel(
 		HitResult,
 		StartLocation,
