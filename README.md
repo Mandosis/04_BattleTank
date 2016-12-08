@@ -12,7 +12,7 @@ Battle Tank is a simple fly-by-wire tank combat game.
 
 Run the following commands
 
-1. `git clone https://github.com/Mandosis/04_BattleTank`
+1. `git clone https://github.com/Mandosis/04_BattleTank.git`
 2. `cd 04_BattleTank`
 3. Right click on `BattleTank.uproject` and select generate project files. On macOS this is done in the editor.
 4. Open `BattleTank.uproject`
