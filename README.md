@@ -1,5 +1,5 @@
 # Battle Tank
-Battle Tank is a simple fly-by-wire tank combat game.
+Battle Tank is a simple fly-by-wire tank combat game that can be played with keyboard & mouse or a controller.
 
 # Instructions
 
