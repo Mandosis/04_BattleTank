@@ -6,7 +6,7 @@ Battle Tank is a simple fly-by-wire tank combat game that can be played with key
 ### Requirements
 
 - Visual Studio Community 2015 or XCode
-- Unreal Engine 4.12
+- Unreal Engine 4.12.X
 
 ### Steps
 
