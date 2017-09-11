@@ -1,7 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "BattleTank.h"
-#include "Public/TankPlayerController.h"
+#include "Tank.h"
+#include "TankPlayerController.h"
 
 
 void ATankPlayerController::BeginPlay()
@@ -36,6 +37,10 @@ ATank* ATankPlayerController::GetControlledTank() const
 void ATankPlayerController::AimTowardsCrosshair() const
 {
 	if (!GetControlledTank()) { return; }
+
+	auto Time = GetWorld()->GetTimeSeconds();
+	UE_LOG(LogTemp, Warning, TEXT("%f: AimTowardsCrosshair called."))
+
 
 	FVector HitLocation;
 
