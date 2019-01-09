@@ -1,6 +1,9 @@
 *.VC.db
 BattleTank.VC.VC.opendb
+BattleTank.sln.DotSettings.user
 .vs/
+.vscode
+BattleTank.code-workspace
 
 # Compiled Object files
 *.slo
